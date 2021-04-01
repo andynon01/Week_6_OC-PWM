@@ -127,7 +127,8 @@ int main(void) {
 		/* USER CODE BEGIN 3 */
 
 		//1 Khz Loop
-		if (micros() - TimeOutputLoop > 1000) {
+		if (micros() - TimeOutputLoop > 1000)
+		{
 			TimeOutputLoop = micros();
 			// #001
 
@@ -135,7 +136,8 @@ int main(void) {
 
 		}
 
-		if (ADCUpdateFlag) {
+		if (ADCUpdateFlag)
+		{
 			ADCUpdateFlag = 0;
 			//#002
 		}
